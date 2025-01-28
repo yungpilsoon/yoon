@@ -32,14 +32,14 @@
 @media only screen and (max-width:800px) {
   /* For tablets: */
   .main {
-    width: 80%;
+    width: 75%;
     padding: 0;
   }
   .right {
     width: 15%;
   }
 }
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:550px) {
   /* For mobile phones: */
   .menu, .main, .right {
     width: 100%;
@@ -52,39 +52,86 @@
 <div style="background-color:#ffffff;padding:15px;">
   <h1></h1>
   <h2></h2>
-  <h4>SUNGPIL YOON</h4>
+  <h4></h4>
 </div>
 
-<div style="overflow:auto">
-  <div class="menu">
-    <div class="menuitem"><i>Images (ongoing)</i></div>
-    <div class="menuitem">Projects</div>
-    <div class="menuitem">About</div>
-    <div class="menuitem">Contact</div>
-    <div class="menuitem">Misc.</div>
-  </div>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Times New Roman";
+}
+
+.sidenav {
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 5px;
+  left: 15px;
+  background: #ffffff;
+  overflow-x: hidden;
+  padding: 30px 2px;
+}
+
+.sidenav a {
+  padding: 12px 16px 12px 32px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #000000;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #340df8;
+}
+
+.main {
+  margin-left: 20%; /* Same width as the sidebar + left position in px */
+  font-size: 14px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 550px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 16px;}
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="#about"><font size="3"> 
+<b>SUNGPIL YOON</b></a></font>
+  <br>
+  <a href="#about"><i>Pictures (ongoing)</i></a>
+  <a href="#services">Projects</a>
+  <a href="#clients"><u>About</u></a>
+  <a href="#contact">CV</a>
+</div>
+
+</body>
+</html> 
+
 
   <div class="main">
     <h3></h3>
     <p></p>
-    <img src="https://github.com/yungpilsoon/yoon/blob/main/08CC7DC3-97C5-42B8-9220-6145DECEDCF5-33465-00001BDE5425C822_1776.jpeg?raw=true" style="width:100%">
-  <img src="fujic200_jjuly2021_004_3024.jpeg?raw=true" style="width:100%">
+    <br>
+    <br>
+    <img src="https://github.com/yungpilsoon/yoon/blob/main/08CC7DC3-97C5-42B8-9220-6145DECEDCF5-33465-00001BDE5425C822_1776.jpeg?raw=true" style="width:100%" alt=":)" class="center">
+    <br>
+    <br>
+  <img src="https://github.com/yungpilsoon/yoon/blob/main/fujic200_jjuly2021_004_3024.jpeg?raw=true" style="width:100%">
+  <br>
+  <br>
+  <br>
+  <br>
   </div>
 
-  <div class="right">
-    <h2>Please</h2>
-    <p>Words</p>
-    <h2>No way</h2>
-    <p>Yes</p>
-    <h2>Not here</h2>
-    <p>Lump</p>
-  </div>
 </div>
 
 
-<div style="background-color:#f1f1f1;text-align:right;padding:10px;margin-top:500px;font-size:10px;">Sungpil Yoon 2025</div>
-
 </body>
 </html>
-
-
