@@ -1,146 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <Title>&#128225; 윤성필</title>
     <style>
-* {
-  box-sizing: border-box;
-}
-.menu {
-  float: left;
-  width: 10%;
-}
-.menuitem {
-  padding: 2px;
-  margin-top: 3px;
-  border-bottom: 1px solid #d6d7d7;
-}
-.main {
-  float: left;
-  width: 60%;
-  padding: 0px 50px;
-  overflow: hidden;
-}
-.right {
-  background-color: rgb(248, 244, 118);
-  float: left;
-  width: 20%;
-  padding: 10px 15px;
-  margin-top: 7px;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
 
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  .main {
-    width: 75%;
-    padding: 0;
-  }
-  .right {
-    width: 15%;
-  }
-}
-@media only screen and (max-width:550px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
-</style>
-</head>
-<body style="font-family:Times New Roman">
+        body {
+            font-family: "Times New Roman", serif;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-<div style="background-color:#ffffff;padding:15px;">
-  <h1></h1>
-  <h2></h2>
-  <h4></h4>
-</div>
+        /* Sidebar Navigation - Above Main Content */
+        .sidenav {
+            width: 150px;
+            position: fixed;
+            top: 45px; /* Adjusted main content */
+            left: 3%;
+            background: #ffffff;
+            padding: 5px;
+            text-align: left;
+        }
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: "Times New Roman";
-}
+        .sidenav a {
+            display: block;
+            padding: 10px;
+            font-size: 13px;
+            color: #000;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
 
-.sidenav {
-  width: 20%;
-  position: fixed;
-  z-index: 1;
-  top: 5px;
-  left: 15px;
-  background: #ffffff;
-  overflow-x: hidden;
-  padding: 30px 2px;
-}
+        .sidenav a:hover {
+            color: #340df8;
+        }
 
-.sidenav a {
-  padding: 12px 16px 12px 32px;
-  text-decoration: none;
-  font-size: 12px;
-  color: #000000;
-  display: block;
-}
+        /* Main Content - Always Centered */
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            margin-top: 100px; /* Ensures spacing below the sidebar */
+        }
 
-.sidenav a:hover {
-  color: #340df8;
-}
+        .main {
+            max-width: 750px; /* Adjust width of content */
+            width: 90%;
+            padding: 20px;
+            text-align: center;
+        }
 
-.main {
-  margin-left: 20%; /* Same width as the sidebar + left position in px */
-  font-size: 14px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
+        /* Image Optimization */
+        .main img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
 
-@media screen and (max-height: 550px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 16px;}
-}
-</style>
+        /* Responsive Design */
+        @media screen and (max-width: 800px) {
+            .sidenav {
+                position: relative;
+                width: 100%;
+                left: 0;
+                text-align: center;
+                padding: 15px 0;
+                top: 0; /* Moves sidebar to the top on smaller screens */
+            }
+
+            .main-container {
+                flex-direction: column;
+                margin-top: 20px;
+            }
+
+            .main {
+                width: 95%;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<div class="sidenav">
-  <a href=""index.html"><font size="3">SUNGPIL YOON</a></font>
-  <br>
-  <a href="index.html"><i>Images (ongoing)</i></a>
-  <a href="">Projects</a>
-  <a href=""><u>About</u></a>
-  <a href="mailto:hello@sungpilyoon.com">Contact</a>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <a href="https://www.instagram.com/environmentsampler/"><u>@</u></a>
-</div>
+    <!-- Sidebar Navigation -->
+    <div class="sidenav">
+        <a href="index.html"><font size="3">SUNGPIL YOON</font</a>
+        <br>
+        <br>
+        <a href="index.html"><i>Images (ongoing)</i></a>
+        <a href="">Projects</a>
+        <a href="about.html"><u>About</u></a>
+        <a href="mailto:hello@sungpilyoon.com">Contact</a>
+        <br>
+        <br>
+        <br>
+        <a href="https://www.instagram.com/environmentsampler/"><u>@</u></a>
+    </div>
 
-</body>
-</html> 
+    <!-- Main Content - Always Centered -->
+    <div class="main-container">
+        <div class="main">
+            <h3>ABOUT</h3>
+            Sungpil Yoon makes lens-based still images. He graduated from University of British Columbia with a BA in Art History.
 
 
-  <div class="main">
-    <h3>ABOUT</h3>
-    Sungpil Yoon makes lens-based still images. He graduated from University of British Columbia with a BA in Art History.</h4>
-
-    <p></p>
-    <br>
-    <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  </div>
-
-</div>
-
+            <!-- Optimized Image Gallery -->
+            <img src>
+        </div>
+    </div>
 
 </body>
 </html>
-
-
-
-
